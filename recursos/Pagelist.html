@@ -1,0 +1,117 @@
+<div class="tableMargin">
+    <table>
+        <thead>
+          <tr>
+            <th>Fecha</th>
+            <th>Detalle</th>
+            <th>Ganancia</th>
+            <th>Gasto</th>
+            <th id="count"></th>
+          </tr>
+        </thead>
+        <tbody id="table">
+        </tbody>
+      </table>
+    </div>
+    <div class="box-info">
+      <div class="box saldo">
+        <h1>$<span id="saldo">0</span></h1>
+        <p>Saldo Actual</p>
+      </div>
+      <div class="box ganancia">
+        <h1>$<span id="ganancia">0</span></h1>
+        <p> Ganancia total</p>
+      </div>
+      <div class="box gasto">
+        <h1>$<span id="gasto">0</span></h1>
+        <p>Gasto total</p>
+      </div>
+      <div class="box dolares">
+        <h1>$<span id="saldoDolares">0</span></h1>
+        <p>Saldo en dolares</p>
+      </div>
+    </div>
+
+    <div class="menu">
+      <ul>
+          <li class="menu-item gastos">gastos</li>
+          <li class="menu-item ingresos">ingresos</li>
+          <li class="menu-item download"  id="download">descarga</li>
+      </ul>
+      <div class="btn-menu">
+          <h1 class="active">+</h1>
+      </div>
+  </div>
+
+
+
+<div class="add" id="add">
+  <form action="" id="formulario">
+    <label>
+    <h1 id="tituloForm"></h1>
+  </label>
+    <label>
+      <h2>Fecha</h2>
+      <div class="fechalabel">
+        <input
+          type="text"
+          placeholder="dia"
+          id="day"
+          name="day"
+          maxlength="2"
+          style="width: 35px"
+          autocomplete="off"
+        />
+        <input
+          type="text"
+          placeholder="mes"
+          id="month"
+          name="month"
+          maxlength="2"
+          style="width: 35px"
+          autocomplete="off"
+        />
+        <input
+          type="text"
+          placeholder="año"
+          id="year"
+          name="year"
+          maxlength="4"
+          style="width: 55px"
+          autocomplete="off"
+        />
+      </div>
+    </label>
+    <label>
+      <h2>Nombre</h2>
+      <input type="text" 
+      placeholder="Nombre" 
+      name="Nombre" 
+      id="inputNombre"
+      autocomplete="off"/>
+      <ul id="suggestions"></ul>
+    </label>
+    <label>
+      <h2>Monto</h2>
+      <input
+        type="text"
+        class="inputNumber"
+        id="monto"
+        placeholder="monto"
+        name="monto"
+        autocomplete="off"
+      />
+    </label>
+    <label>
+      <h2>Detalle</h2>
+      <input type="text" placeholder="Detalles" name="Detalles" />
+    </label>
+    <br><br>
+    <label>
+      <button id="Save" class="Save">Guardar</button>
+    </label>
+  </form>
+  <p class="Close">Salir</p>
+</div>
+
+
